@@ -322,9 +322,9 @@ Example:
 #    ""
 #)
 
-#$InvokeScript = @(
-#    ""
-#)
+$InvokeScript = @(
+    ""
+)
 
 #$UndoScript = @(
 #    ""

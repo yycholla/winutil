@@ -9791,7 +9791,7 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
         Background="{MainBackgroundColor}"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Title="Chris Titus Tech''s Windows Utility" Height="800" Width="1280">
+        Title="Alpha Media Windows Utility" Height="800" Width="1280">
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="0" CornerRadius="10"/>
     </WindowChrome.WindowChrome>
@@ -10356,7 +10356,7 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
         </Grid.ColumnDefinitions>
         <DockPanel HorizontalAlignment="Stretch" Background="{MainBackgroundColor}" SnapsToDevicePixels="True" Grid.Row="0" Width="Auto">
             <Image Height="{ToggleButtonHeight}" Width="{ToggleButtonHeight}" Name="WPFIcon" 
-                SnapsToDevicePixels="True" Source="https://christitus.com/images/logo-full.png" Margin="10"/>
+                SnapsToDevicePixels="True" Source="https://www.alphamediausa.com/wp-content/themes/redlab/assets/img/redlab-fallback.jpg" Margin="10"/>
             <ToggleButton HorizontalAlignment="Left" Height="{ToggleButtonHeight}" Width="100"
                 Background="{ButtonInstallBackgroundColor}" Foreground="white" FontWeight="Bold" Name="WPFTab1BT">
                 <ToggleButton.Content>
