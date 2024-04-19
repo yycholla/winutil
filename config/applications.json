@@ -1814,5 +1814,21 @@
 		"description": "TightVNC is a free and Open Source remote desktop software that lets you access and control a computer over the network. With its intuitive interface, you can interact with the remote screen as if you were sitting in front of it. You can open files, launch applications, and perform other actions on the remote desktop almost as if you were physically there",
 		"link": "https://www.tightvnc.com/",
 		"winget": "GlavSoft.TightVNC"
-	}
+	},
+  "WPFInstallGoToAgent": {
+    "category": "Utilities",
+    "choco": "na",
+    "content": "GoToAgentDesktopConsole",
+    "description": "Host side of g2a",
+    "link": "https://help.gotoassist.com/remote-support-versions",
+    "winget": "GoTo.GoToAssistAgentDesktopConsole"
+  },
+  "WPFInstallLogMeInClient": {
+    "category": "Utilities",
+    "choco": "LogMeIn.Client",
+    "content": "LogMeInClient",
+    "description": "LogMeInClient",
+    "link": "https://support.logmeininc.com/pro/help/what-is-the-logmein-client",
+    "winget": "na"
+  }
 }

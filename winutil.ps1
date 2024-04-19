@@ -6675,7 +6675,23 @@ $sync.configs.applications = '{
 		"description": "TightVNC is a free and Open Source remote desktop software that lets you access and control a computer over the network. With its intuitive interface, you can interact with the remote screen as if you were sitting in front of it. You can open files, launch applications, and perform other actions on the remote desktop almost as if you were physically there",
 		"link": "https://www.tightvnc.com/",
 		"winget": "GlavSoft.TightVNC"
-	}
+	},
+  "WPFInstallGoToAgent": {
+    "category": "Utilities",
+    "choco": "na",
+    "content": "GoToAgentDesktopConsole",
+    "description": "Host side of g2a",
+    "link": "https://help.gotoassist.com/remote-support-versions",
+    "winget": "GoTo.GoToAssistAgentDesktopConsole"
+  },
+  "WPFInstallLogMeInClient": {
+    "category": "Utilities",
+    "choco": "LogMeIn.Client",
+    "content": "LogMeInClient",
+    "description": "LogMeInClient",
+    "link": "https://support.logmeininc.com/pro/help/what-is-the-logmein-client",
+    "winget": "na"
+  }
 }' | convertfrom-json
 $sync.configs.dns = '{
     "Google":{
@@ -11014,6 +11030,9 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <CheckBox Name="WPFInstallgoogledrive" Content="Google Drive" ToolTip="File syncing across devices all tied to your google account" Margin="0,0,2,0"/><TextBlock Name="WPFInstallgoogledriveLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.google.com/drive/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
+<CheckBox Name="WPFInstallGoToAgent" Content="GoToAgentDesktopConsole" ToolTip="Host side of g2a" Margin="0,0,2,0"/><TextBlock Name="WPFInstallGoToAgentLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://help.gotoassist.com/remote-support-versions" />
+</StackPanel>
+<StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallgpuz" Content="GPU-Z" ToolTip="GPU-Z provides detailed information about your graphics card and GPU." Margin="0,0,2,0"/><TextBlock Name="WPFInstallgpuzLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.techpowerup.com/gpuz/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
@@ -11044,6 +11063,9 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <CheckBox Name="WPFInstalllocalsend" Content="LocalSend" ToolTip="An open source cross-platform alternative to AirDrop." Margin="0,0,2,0"/><TextBlock Name="WPFInstalllocalsendLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://localsend.org/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
+<CheckBox Name="WPFInstallLogMeInClient" Content="LogMeInClient" ToolTip="LogMeInClient" Margin="0,0,2,0"/><TextBlock Name="WPFInstallLogMeInClientLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://support.logmeininc.com/pro/help/what-is-the-logmein-client" />
+</StackPanel>
+<StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallmalwarebytes" Content="Malwarebytes" ToolTip="Malwarebytes is an anti-malware software that provides real-time protection against threats." Margin="0,0,2,0"/><TextBlock Name="WPFInstallmalwarebytesLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.malwarebytes.com/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
@@ -11058,17 +11080,17 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallmsiafterburner" Content="MSI Afterburner" ToolTip="MSI Afterburner is a graphics card overclocking utility with advanced features." Margin="0,0,2,0"/><TextBlock Name="WPFInstallmsiafterburnerLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.msi.com/Landing/afterburner" />
 </StackPanel>
+
+</StackPanel>
+</Border>
+<Border Grid.Row="1" Grid.Column="4">
+<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallnanazip" Content="NanaZip" ToolTip="NanaZip is a fast and efficient file compression and decompression tool." Margin="0,0,2,0"/><TextBlock Name="WPFInstallnanazipLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/M2Team/NanaZip" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallneofetchwin" Content="Neofetch" ToolTip="Neofetch is a command-line utility for displaying system information in a visually appealing way." Margin="0,0,2,0"/><TextBlock Name="WPFInstallneofetchwinLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/nepnep39/neofetch-win" />
 </StackPanel>
-
-</StackPanel>
-</Border>
-<Border Grid.Row="1" Grid.Column="4">
-<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallnextclouddesktop" Content="Nextcloud Desktop" ToolTip="Nextcloud Desktop is the official desktop client for the Nextcloud file synchronization and sharing platform." Margin="0,0,2,0"/><TextBlock Name="WPFInstallnextclouddesktopLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://nextcloud.com/install/#install-clients" />
 </StackPanel>
