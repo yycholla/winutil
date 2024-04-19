@@ -10,7 +10,7 @@
     Author         : Chris Titus @christitustech
     Runspace Author: @DeveloperDurp
     GitHub         : https://github.com/ChrisTitusTech
-    Version        : 24.03.30
+    Version        : 24.04.19
 #>
 param (
     [switch]$Debug,
@@ -47,7 +47,7 @@ Add-Type -AssemblyName System.Windows.Forms
 # Variable to sync between runspaces
 $sync = [Hashtable]::Synchronized(@{})
 $sync.PSScriptRoot = $PSScriptRoot
-$sync.version = "24.03.30"
+$sync.version = "24.04.19"
 $sync.configs = @{}
 $sync.ProcessRunning = $false
 
@@ -3128,25 +3128,54 @@ Function Invoke-WPFFormVariables {
     #If ($global:ReadmeDisplay -ne $true) { Write-Host "If you need to reference this display again, run Get-FormVariables" -ForegroundColor Yellow; $global:ReadmeDisplay = $true }
 
 
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%S%%%%%%%%SS%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#+*%?**?%?+*#%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%S?*****?%S%??%S%%%%%%%%%%%%%%#;%?,+*+++#**#%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%S?..;*+;::+#@%;*S%%%%%%%%%%%%#+?@;......%;S%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%#::*;,....,S@#+.+@S%%?????%%%+:@@@S;...,S+#%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%#%SS,....+S?:,.,;;,,.......,..,;?@@@?..:S*#%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%SS%#+...*%:.................,:::,,*@@?.+%%S%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%S%..*+......,::,........,:;++??::%@;*;#%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%#+,;.....+%*+;:::,...:%#S*:..,+,.:;.*#%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%#;.....,+,,*%S#@,..:@@@S%%*:.....:?#%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%#+.....;???S##@@,..+@@@#%S?#+....*@%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%SS,.....:**;,;@%...,#@%?%%?*,..,+@S%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%SS+,........*?,....:%........;S@S%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#%........,,......,,......:@@%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#,......:+:......,+:.....+@S%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#;....:*+,........,;*+,..%@S%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%SS,..:@+..:*?*??+,..:@S*%@#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%S%+,*S,.+@%#@@%##:..?@@@#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%S#+;..+S%%@@?SS:..*@#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%SS,....,***+,....S#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#?.............:#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#*;::;+*+;:::;%S%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%SSSSS%??%SSSS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    Write-Host "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+    
     Write-Host ""
-    Write-Host "    CCCCCCCCCCCCCTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT   "
-    Write-Host " CCC::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T   "
-    Write-Host "CC:::::::::::::::CT:::::::::::::::::::::TT:::::::::::::::::::::T  "
-    Write-Host "C:::::CCCCCCCC::::CT:::::TT:::::::TT:::::TT:::::TT:::::::TT:::::T "
-    Write-Host "C:::::C       CCCCCCTTTTTT  T:::::T  TTTTTTTTTTTT  T:::::T  TTTTTT"
-    Write-Host "C:::::C                     T:::::T                T:::::T        "
-    Write-Host "C:::::C                     T:::::T                T:::::T        "
-    Write-Host "C:::::C                     T:::::T                T:::::T        "
-    Write-Host "C:::::C                     T:::::T                T:::::T        "
-    Write-Host "C:::::C                     T:::::T                T:::::T        "
-    Write-Host "C:::::C                     T:::::T                T:::::T        "
-    Write-Host "C:::::C       CCCCCC        T:::::T                T:::::T        "
-    Write-Host "C:::::CCCCCCCC::::C      TT:::::::TT            TT:::::::TT       "
-    Write-Host "CC:::::::::::::::C       T:::::::::T            T:::::::::T       "
-    Write-Host "CCC::::::::::::C         T:::::::::T            T:::::::::T       "
-    Write-Host "  CCCCCCCCCCCCC          TTTTTTTTTTT            TTTTTTTTTTT       "
-    Write-Host ""
-    Write-Host "====Chris Titus Tech====="
+    Write-Host "=====Alpha Media Usa====="
     Write-Host "=====Windows Toolbox====="
 
     #====DEBUG GUI Elements====
@@ -4831,14 +4860,6 @@ function Invoke-WPFUpdatessecurity {
         Write-Host "================================="
 }
 $sync.configs.applications = '{
-	"WPFInstall1password": {
-		"category": "Utilities",
-		"choco": "1password",
-		"content": "1Password",
-		"description": "1Password is a password manager that allows you to store and manage your passwords securely.",
-		"link": "https://1password.com/",
-		"winget": "AgileBits.1Password"
-	},
 	"WPFInstall7zip": {
 		"category": "Utilities",
 		"choco": "7zip",
@@ -4895,14 +4916,6 @@ $sync.configs.applications = '{
 		"link": "https://angryip.org/",
 		"winget": "angryziber.AngryIPScanner"
 	},
-	"WPFInstallanki": {
-		"category": "Document",
-		"choco": "anki",
-		"content": "Anki",
-		"description": "Anki is a flashcard application that helps you memorize information with intelligent spaced repetition.",
-		"link": "https://apps.ankiweb.net/",
-		"winget": "Anki.Anki"
-	},
 	"WPFInstallanydesk": {
 		"category": "Utilities",
 		"choco": "anydesk",
@@ -4911,14 +4924,6 @@ $sync.configs.applications = '{
 		"link": "https://anydesk.com/",
 		"winget": "AnyDeskSoftwareGmbH.AnyDesk"
 	},
-	"WPFInstallATLauncher": {
-		"category": "Games",
-		"choco": "na",
-		"content": "ATLauncher",
-		"description": "ATLauncher is a Launcher for Minecraft which integrates multiple different ModPacks to allow you to download and install ModPacks easily and quickly.",
-		"link": "https://github.com/ATLauncher/ATLauncher",
-		"winget": "ATLauncher.ATLauncher"
-	},
 	"WPFInstallaudacity": {
 		"category": "Multimedia Tools",
 		"choco": "audacity",
@@ -4926,14 +4931,6 @@ $sync.configs.applications = '{
 		"description": "Audacity is a free and open-source audio editing software known for its powerful recording and editing capabilities.",
 		"link": "https://www.audacityteam.org/",
 		"winget": "Audacity.Audacity"
-	},
-	"WPFInstallauthy": {
-		"category": "Utilities",
-		"choco": "authy-desktop",
-		"content": "Authy",
-		"description": "Simple and cross-platform 2FA app",
-		"link": "https://authy.com/",
-		"winget": "Twilio.Authy"
 	},
 	"WPFInstallautohotkey": {
 		"category": "Utilities",
@@ -4959,14 +4956,6 @@ $sync.configs.applications = '{
 		"link": "https://github.com/sharkdp/bat",
 		"winget": "sharkdp.bat"
 	},
-	"WPFInstallbitcomet": {
-		"category": "Utilities",
-		"choco": "bitcomet",
-		"content": "BitComet",
-		"description": "BitComet is a free and open-source BitTorrent client that supports HTTP/FTP downloads and provides download management features.",
-		"link": "https://www.bitcomet.com/",
-		"winget": "CometNetwork.BitComet"
-	},
 	"WPFInstallbitwarden": {
 		"category": "Utilities",
 		"choco": "bitwarden",
@@ -4990,22 +4979,6 @@ $sync.configs.applications = '{
 		"description": "Blender is a powerful open-source 3D creation suite, offering modeling, sculpting, animation, and rendering tools.",
 		"link": "https://www.blender.org/",
 		"winget": "BlenderFoundation.Blender"
-	},
-	"WPFInstallbluestacks": {
-		"category": "Games",
-		"choco": "bluestacks",
-		"content": "Bluestacks",
-		"description": "Bluestacks is an Android emulator for running mobile apps and games on a PC.",
-		"link": "https://www.bluestacks.com/",
-		"winget": "BlueStack.BlueStacks"
-	},
-	"WPFInstallbrave": {
-		"category": "Browsers",
-		"choco": "brave",
-		"content": "Brave",
-		"description": "Brave is a privacy-focused web browser that blocks ads and trackers, offering a faster and safer browsing experience.",
-		"link": "https://www.brave.com",
-		"winget": "Brave.Brave"
 	},
 	"WPFInstallbulkcrapuninstaller": {
 		"category": "Utilities",
@@ -5031,22 +5004,6 @@ $sync.configs.applications = '{
 		"link": "https://carnackeys.com/",
 		"winget": "code52.Carnac"
 	},
-	"WPFInstallcemu": {
-		"category": "Games",
-		"choco": "cemu",
-		"content": "Cemu",
-		"description": "Cemu is a highly experimental software to emulate Wii U applications on PC.",
-		"link": "https://cemu.info/",
-		"winget": "Cemu.Cemu"
-	},
-	"WPFInstallchatterino": {
-		"category": "Communications",
-		"choco": "chatterino",
-		"content": "Chatterino",
-		"description": "Chatterino is a chat client for Twitch chat that offers a clean and customizable interface for a better streaming experience.",
-		"link": "https://www.chatterino.com/",
-		"winget": "ChatterinoTeam.Chatterino"
-	},
 	"WPFInstallchrome": {
 		"category": "Browsers",
 		"choco": "googlechrome",
@@ -5054,14 +5011,6 @@ $sync.configs.applications = '{
 		"description": "Google Chrome is a widely used web browser known for its speed, simplicity, and seamless integration with Google services.",
 		"link": "https://www.google.com/chrome/",
 		"winget": "Google.Chrome"
-	},
-	"WPFInstallchromium": {
-		"category": "Browsers",
-		"choco": "chromium",
-		"content": "Chromium",
-		"description": "Chromium is the open-source project that serves as the foundation for various web browsers, including Chrome.",
-		"link": "https://github.com/Hibbiki/chromium-win64",
-		"winget": "Hibbiki.Chromium"
 	},
 	"WPFInstallclementine": {
 		"category": "Multimedia Tools",
@@ -5078,14 +5027,6 @@ $sync.configs.applications = '{
 		"description": "Clink is a powerful Bash-compatible command-line interface (CLIenhancement for Windows, adding features like syntax highlighting and improved history).",
 		"link": "https://mridgers.github.io/clink/",
 		"winget": "chrisant996.Clink"
-	},
-	"WPFInstallclonehero": {
-		"category": "Games",
-		"choco": "na",
-		"content": "Clone Hero",
-		"description": "Clone Hero is a free rhythm game, which can be played with any 5 or 6 button guitar controller.",
-		"link": "https://clonehero.net/",
-		"winget": "CloneHeroTeam.CloneHero"
 	},
 	"WPFInstallcopyq": {
 		"category": "Utilities",
@@ -5143,14 +5084,6 @@ $sync.configs.applications = '{
 		"link": "https://www.wagnardsoft.com/display-driver-uninstaller-DDU-",
 		"winget": "ddu"
 	},
-	"WPFInstalldeluge": {
-		"category": "Utilities",
-		"choco": "deluge",
-		"content": "Deluge",
-		"description": "Deluge is a free and open-source BitTorrent client. It features a user-friendly interface, support for plugins, and the ability to manage torrents remotely.",
-		"link": "https://deluge-torrent.org/",
-		"winget": "DelugeTeam.Deluge"
-	},
 	"WPFInstalldevtoys": {
 		"category": "Utilities",
 		"choco": "devtoys",
@@ -5166,14 +5099,6 @@ $sync.configs.applications = '{
 		"description": "digiKam is an advanced open-source photo management software with features for organizing, editing, and sharing photos.",
 		"link": "https://www.digikam.org/",
 		"winget": "KDE.digikam"
-	},
-	"WPFInstalldiscord": {
-		"category": "Communications",
-		"choco": "discord",
-		"content": "Discord",
-		"description": "Discord is a popular communication platform with voice, video, and text chat, designed for gamers but used by a wide range of communities.",
-		"link": "https://discord.com/",
-		"winget": "Discord.Discord"
 	},
 	"WPFInstalldockerdesktop": {
 		"category": "Development",
@@ -5239,14 +5164,6 @@ $sync.configs.applications = '{
 		"link": "https://www.duplicati.com/",
 		"winget": "Duplicati.Duplicati"
 	},
-	"WPFInstalleaapp": {
-		"category": "Games",
-		"choco": "ea-app",
-		"content": "EA App",
-		"description": "EA App is a platform for accessing and playing Electronic Arts games.",
-		"link": "https://www.ea.com/ea-app",
-		"winget": "ElectronicArts.EADesktop"
-	},
 	"WPFInstalleartrumpet": {
 		"category": "Multimedia Tools",
 		"choco": "eartrumpet",
@@ -5270,22 +5187,6 @@ $sync.configs.applications = '{
 		"description": "EFI Boot Editor is a tool for managing the EFI/UEFI boot entries on your system. It allows you to customize the boot configuration of your computer.",
 		"link": "https://www.easyuefi.com/",
 		"winget": "EFIBootEditor.EFIBootEditor"
-	},
-	"WPFInstallemulationstation": {
-		"category": "Games",
-		"choco": "emulationstation",
-		"content": "Emulation Station",
-		"description": "Emulation Station is a graphical and themeable emulator front-end that allows you to access all your favorite games in one place.",
-		"link": "https://emulationstation.org/",
-		"winget": "Emulationstation.Emulationstation"
-	},
-	"WPFInstallepicgames": {
-		"category": "Games",
-		"choco": "epicgameslauncher",
-		"content": "Epic Games Launcher",
-		"description": "Epic Games Launcher is the client for accessing and playing games from the Epic Games Store.",
-		"link": "https://www.epicgames.com/store/en-US/",
-		"winget": "EpicGames.EpicGamesLauncher"
 	},
 	"WPFInstallerrorlookup": {
 		"category": "Utilities",
@@ -5318,22 +5219,6 @@ $sync.configs.applications = '{
 		"description": "Etcher is a powerful tool for creating bootable USB drives with ease.",
 		"link": "https://www.balena.io/etcher/",
 		"winget": "Balena.Etcher"
-	},
-	"WPFInstallfalkon": {
-		"category": "Browsers",
-		"choco": "falkon",
-		"content": "Falkon",
-		"description": "Falkon is a lightweight and fast web browser with a focus on user privacy and efficiency.",
-		"link": "https://www.falkon.org/",
-		"winget": "KDE.Falkon"
-	},
-	"WPFInstallferdium": {
-		"category": "Communications",
-		"choco": "ferdium",
-		"content": "Ferdium",
-		"description": "Ferdium is a messaging application that combines multiple messaging services into a single app for easy management.",
-		"link": "https://ferdium.org/",
-		"winget": "Ferdium.Ferdium"
 	},
 	"WPFInstallffmpeg": {
 		"category": "Multimedia Tools",
@@ -5391,14 +5276,6 @@ $sync.configs.applications = '{
 		"link": "https://app.prntscr.com/",
 		"winget": "Skillbrains.Lightshot"
 	},
-	"WPFInstallfloorp": {
-		"category": "Browsers",
-		"choco": "na",
-		"content": "Floorp",
-		"description": "Floorp is an open-source web browser project that aims to provide a simple and fast browsing experience.",
-		"link": "https://floorp.app/",
-		"winget": "Ablaze.Floorp"
-	},
 	"WPFInstallflux": {
 		"category": "Utilities",
 		"choco": "flux",
@@ -5446,14 +5323,6 @@ $sync.configs.applications = '{
 		"description": "A command-line fuzzy finder",
 		"link": "https://github.com/junegunn/fzf/",
 		"winget": "junegunn.fzf"
-	},
-	"WPFInstallgeforcenow": {
-		"category": "Games",
-		"choco": "nvidia-geforce-now",
-		"content": "GeForce NOW",
-		"description": "GeForce NOW is a cloud gaming service that allows you to play high-quality PC games on your device.",
-		"link": "https://www.nvidia.com/en-us/geforce-now/",
-		"winget": "Nvidia.GeForceNow"
 	},
 	"WPFInstallgimp": {
 		"category": "Multimedia Tools",
@@ -5503,14 +5372,6 @@ $sync.configs.applications = '{
 		"link": "https://www.glarysoft.com/glary-utilities/",
 		"winget": "Glarysoft.GlaryUtilities"
 	},
-	"WPFInstallgog": {
-		"category": "Games",
-		"choco": "goggalaxy",
-		"content": "GOG Galaxy",
-		"description": "GOG Galaxy is a gaming client that offers DRM-free games, additional content, and more.",
-		"link": "https://www.gog.com/galaxy",
-		"winget": "GOG.Galaxy"
-	},
 	"WPFInstallgolang": {
 		"category": "Development",
 		"choco": "golang",
@@ -5551,14 +5412,6 @@ $sync.configs.applications = '{
 		"link": "https://gerardog.github.io/gsudo/",
 		"winget": "gerardog.gsudo"
 	},
-	"WPFInstallguilded": {
-		"category": "Communications",
-		"choco": "na",
-		"content": "Guilded",
-		"description": "Guilded is a communication and productivity platform that includes chat, scheduling, and collaborative tools for gaming and communities.",
-		"link": "https://www.guilded.gg/",
-		"winget": "Guilded.Guilded"
-	},
 	"WPFInstallhandbrake": {
 		"category": "Multimedia Tools",
 		"choco": "handbrake",
@@ -5582,22 +5435,6 @@ $sync.configs.applications = '{
 		"description": "Helix is a neovim alternative built in rust.",
 		"link": "https://helix-editor.com/",
 		"winget": "Helix.Helix"
-	},
-	"WPFInstallheroiclauncher": {
-		"category": "Games",
-		"choco": "na",
-		"content": "Heroic Games Launcher",
-		"description": "Heroic Games Launcher is an open-source alternative game launcher for Epic Games Store.",
-		"link": "https://heroicgameslauncher.com/",
-		"winget": "HeroicGamesLauncher.HeroicGamesLauncher"
-	},
-	"WPFInstallhexchat": {
-		"category": "Communications",
-		"choco": "hexchat",
-		"content": "Hexchat",
-		"description": "HexChat is a free, open-source IRC (Internet Relay Chat) client with a graphical interface for easy communication.",
-		"link": "https://hexchat.github.io/",
-		"winget": "HexChat.HexChat"
 	},
 	"WPFInstallhwinfo": {
 		"category": "Utilities",
@@ -5631,14 +5468,6 @@ $sync.configs.applications = '{
 		"link": "https://inkscape.org/",
 		"winget": "Inkscape.Inkscape"
 	},
-	"WPFInstallitch": {
-		"category": "Games",
-		"choco": "itch",
-		"content": "Itch.io",
-		"description": "Itch.io is a digital distribution platform for indie games and creative projects.",
-		"link": "https://itch.io/",
-		"winget": "ItchIo.Itch"
-	},
 	"WPFInstallitunes": {
 		"category": "Multimedia Tools",
 		"choco": "itunes",
@@ -5646,14 +5475,6 @@ $sync.configs.applications = '{
 		"description": "iTunes is a media player, media library, and online radio broadcaster application developed by Apple Inc.",
 		"link": "https://www.apple.com/itunes/",
 		"winget": "Apple.iTunes"
-	},
-	"WPFInstalljami": {
-		"category": "Communications",
-		"choco": "jami",
-		"content": "Jami",
-		"description": "Jami is a secure and privacy-focused communication platform that offers audio and video calls, messaging, and file sharing.",
-		"link": "https://jami.net/",
-		"winget": "SFLinux.Jami"
 	},
 	"WPFInstalljava16": {
 		"category": "Development",
@@ -5751,13 +5572,21 @@ $sync.configs.applications = '{
 		"link": "https://kdenlive.org/",
 		"winget": "KDE.Kdenlive"
 	},
-	"WPFInstallkeepass": {
+	"WPFInstallkeepassXC": {
 		"category": "Utilities",
 		"choco": "keepassxc",
 		"content": "KeePassXC",
 		"description": "KeePassXC is a cross-platform, open-source password manager with strong encryption features.",
 		"link": "https://keepassxc.org/",
 		"winget": "KeePassXCTeam.KeePassXC"
+	},
+	"WPFInstallkeepass": {
+		"category": "Utilities",
+		"choco": "keepass",
+		"content": "KeePass",
+		"description": "KeePass is a light-weight, easy to use, open-source password manager with strong encryption features.",
+		"link": "https://keepass.info/",
+		"winget": "DominikReichl.KeePass"
 	},
 	"WPFInstallklite": {
 		"category": "Multimedia Tools",
@@ -5799,22 +5628,6 @@ $sync.configs.applications = '{
 		"link": "https://www.libreoffice.org/",
 		"winget": "TheDocumentFoundation.LibreOffice"
 	},
-	"WPFInstalllibrewolf": {
-		"category": "Browsers",
-		"choco": "librewolf",
-		"content": "LibreWolf",
-		"description": "LibreWolf is a privacy-focused web browser based on Firefox, with additional privacy and security enhancements.",
-		"link": "https://librewolf-community.gitlab.io/",
-		"winget": "LibreWolf.LibreWolf"
-	},
-	"WPFInstalllinphone": {
-		"category": "Communications",
-		"choco": "linphone",
-		"content": "Linphone",
-		"description": "Linphone is an open-source voice over IP (VoIPservice that allows for audio and video calls, messaging, and more.",
-		"link": "https://www.linphone.org/",
-		"winget": "BelledonneCommunications.Linphone"
-	},
 	"WPFInstalllivelywallpaper": {
 		"category": "Utilities",
 		"choco": "lively",
@@ -5855,14 +5668,6 @@ $sync.configs.applications = '{
 		"link": "https://masscode.io/",
 		"winget": "antonreshetov.massCode"
 	},
-	"WPFInstallmatrix": {
-		"category": "Communications",
-		"choco": "element-desktop",
-		"content": "Matrix",
-		"description": "Matrix is an open network for secure, decentralized communication with features like chat, VoIP, and collaboration tools.",
-		"link": "https://element.io/",
-		"winget": "Element.Element"
-	},
 	"WPFInstallmeld": {
 		"category": "Utilities",
 		"choco": "meld",
@@ -5878,14 +5683,6 @@ $sync.configs.applications = '{
 		"description": "Monitorian is a utility for adjusting monitor brightness and contrast on Windows.",
 		"link": "https://github.com/emoacht/Monitorian",
 		"winget": "emoacht.Monitorian"
-	},
-	"WPFInstallmoonlight": {
-		"category": "Games",
-		"choco": "moonlight-qt",
-		"content": "Moonlight/GameStream Client",
-		"description": "Moonlight/GameStream Client allows you to stream PC games to other devices over your local network.",
-		"link": "https://moonlight-stream.org/",
-		"winget": "MoonlightGameStreamingProject.Moonlight"
 	},
 	"WPFInstallMotrix": {
 		"category": "Utilities",
@@ -5918,14 +5715,6 @@ $sync.configs.applications = '{
 		"description": "MSI Afterburner is a graphics card overclocking utility with advanced features.",
 		"link": "https://www.msi.com/Landing/afterburner",
 		"winget": "Guru3D.Afterburner"
-	},
-	"WPFInstallmullvadbrowser": {
-		"category": "Browsers",
-		"choco": "na",
-		"content": "Mullvad Browser",
-		"description": "Mullvad Browser is a privacy-focused web browser, developed in partnership with the Tor Project.",
-		"link": "https://mullvad.net/browser",
-		"winget": "MullvadVPN.MullvadBrowser"
 	},
 	"WPFInstallmusicbee": {
 		"category": "Multimedia Tools",
@@ -5974,14 +5763,6 @@ $sync.configs.applications = '{
 		"description": "Nextcloud Desktop is the official desktop client for the Nextcloud file synchronization and sharing platform.",
 		"link": "https://nextcloud.com/install/#install-clients",
 		"winget": "Nextcloud.NextcloudDesktop"
-	},
-	"WPFInstallnglide": {
-		"category": "Multimedia Tools",
-		"choco": "na",
-		"content": "nGlide (3dfx compatibility)",
-		"description": "nGlide is a 3Dfx Voodoo Glide wrapper. It allows you to play games that use Glide API on modern graphics cards without the need for a 3Dfx Voodoo graphics card.",
-		"link": "http://www.zeus-software.com/downloads/nglide",
-		"winget": "ZeusSoftware.nGlide"
 	},
 	"WPFInstallnmap": {
 		"category": "Pro Tools",
@@ -6215,14 +5996,6 @@ $sync.configs.applications = '{
 		"link": "https://www.raspberrypi.com/software/",
 		"winget": "RaspberryPiFoundation.RaspberryPiImager"
 	},
-	"WPFInstallplaynite": {
-		"category": "Games",
-		"choco": "playnite",
-		"content": "Playnite",
-		"description": "Playnite is an open-source video game library manager with one simple goal: To provide a unified interface for all of your games.",
-		"link": "https://playnite.link/",
-		"winget": "Playnite.Playnite"
-	},
 	"WPFInstallplex": {
 		"category": "Multimedia Tools",
 		"choco": "plexmediaserver",
@@ -6279,14 +6052,6 @@ $sync.configs.applications = '{
 		"link": "https://github.com/microsoft/PowerToys",
 		"winget": "Microsoft.PowerToys"
 	},
-	"WPFInstallprismlauncher": {
-		"category": "Games",
-		"choco": "prismlauncher",
-		"content": "Prism Launcher",
-		"description": "Prism Launcher is a game launcher and manager designed to provide a clean and intuitive interface for organizing and launching your games.",
-		"link": "https://prismlauncher.org/",
-		"winget": "PrismLauncher.PrismLauncher"
-	},
 	"WPFInstallprocesslasso": {
 		"category": "Utilities",
 		"choco": "plasso",
@@ -6311,14 +6076,6 @@ $sync.configs.applications = '{
 		"link": "https://www.prusa3d.com/prusaslicer/",
 		"winget": "Prusa3d.PrusaSlicer"
 	},
-	"WPFInstallpsremoteplay": {
-		"category": "Games",
-		"choco": "ps-remote-play",
-		"content": "PS Remote Play",
-		"description": "PS Remote Play is a free application that allows you to stream games from your PlayStation console to a PC or mobile device.",
-		"link": "https://remoteplay.dl.playstation.net/remoteplay/lang/gb/",
-		"winget": "PlayStation.PSRemotePlay"
-	},
 	"WPFInstallputty": {
 		"category": "Pro Tools",
 		"choco": "putty",
@@ -6334,30 +6091,6 @@ $sync.configs.applications = '{
 		"description": "Python is a versatile programming language used for web development, data analysis, artificial intelligence, and more.",
 		"link": "https://www.python.org/",
 		"winget": "Python.Python.3.12"
-	},
-	"WPFInstallqbittorrent": {
-		"category": "Utilities",
-		"choco": "qbittorrent",
-		"content": "qBittorrent",
-		"description": "qBittorrent is a free and open-source BitTorrent client that aims to provide a feature-rich and lightweight alternative to other torrent clients.",
-		"link": "https://www.qbittorrent.org/",
-		"winget": "qBittorrent.qBittorrent"
-	},
-	"WPFInstallqtox": {
-		"category": "Communications",
-		"choco": "qtox",
-		"content": "QTox",
-		"description": "QTox is a free and open-source messaging app that prioritizes user privacy and security in its design.",
-		"link": "https://qtox.github.io/",
-		"winget": "Tox.qTox"
-	},
-	"WPFInstallrainmeter": {
-		"category": "Utilities",
-		"choco": "na",
-		"content": "Rainmeter",
-		"description": "Rainmeter is a desktop customization tool that allows you to create and share customizable skins for your desktop.",
-		"link": "https://www.rainmeter.net/",
-		"winget": "Rainmeter.Rainmeter"
 	},
 	"WPFInstallrevo": {
 		"category": "Utilities",
@@ -6423,14 +6156,6 @@ $sync.configs.applications = '{
 		"link": "https://sourceforge.net/projects/snappy-driver-installer-origin",
 		"winget": "GlennDelahoy.SnappyDriverInstallerOrigin"
 	},
-	"WPFInstallsession": {
-		"category": "Communications",
-		"choco": "session",
-		"content": "Session",
-		"description": "Session is a private and secure messaging app built on a decentralized network for user privacy and data protection.",
-		"link": "https://getsession.org/",
-		"winget": "Oxen.Session"
-	},
 	"WPFInstallsharex": {
 		"category": "Multimedia Tools",
 		"choco": "sharex",
@@ -6447,22 +6172,6 @@ $sync.configs.applications = '{
 		"link": "https://nilesoft.org/",
 		"winget": "Nilesoft.Shell"
 	},
-	"WPFInstallsidequest": {
-		"category": "Games",
-		"choco": "sidequest",
-		"content": "SideQuestVR",
-		"description": "SideQuestVR is a community-driven platform that enables users to discover, install, and manage virtual reality content on Oculus Quest devices.",
-		"link": "https://sidequestvr.com/",
-		"winget": "SideQuestVR.SideQuest"
-	},
-	"WPFInstallsignal": {
-		"category": "Communications",
-		"choco": "signal",
-		"content": "Signal",
-		"description": "Signal is a privacy-focused messaging app that offers end-to-end encryption for secure and private communication.",
-		"link": "https://signal.org/",
-		"winget": "OpenWhisperSystems.Signal"
-	},
 	"WPFInstallsimplewall": {
 		"category": "Pro Tools",
 		"choco": "simplewall",
@@ -6470,22 +6179,6 @@ $sync.configs.applications = '{
 		"description": "simplewall is a free and open-source firewall application for Windows. It allows users to control and manage the inbound and outbound network traffic of applications.",
 		"link": "https://github.com/henrypp/simplewall",
 		"winget": "Henry++.simplewall"
-	},
-	"WPFInstallskype": {
-		"category": "Communications",
-		"choco": "skype",
-		"content": "Skype",
-		"description": "Skype is a widely used communication platform offering video calls, voice calls, and instant messaging services.",
-		"link": "https://www.skype.com/",
-		"winget": "Microsoft.Skype"
-	},
-	"WPFInstallslack": {
-		"category": "Communications",
-		"choco": "slack",
-		"content": "Slack",
-		"description": "Slack is a collaboration hub that connects teams and facilitates communication through channels, messaging, and file sharing.",
-		"link": "https://slack.com/",
-		"winget": "SlackTechnologies.Slack"
 	},
 	"WPFInstallspacedrive": {
 		"category": "Utilities",
@@ -6511,14 +6204,6 @@ $sync.configs.applications = '{
 		"link": "https://www.startallback.com/",
 		"winget": "startallback"
 	},
-	"WPFInstallsteam": {
-		"category": "Games",
-		"choco": "steam-client",
-		"content": "Steam",
-		"description": "Steam is a digital distribution platform for purchasing and playing video games, offering multiplayer gaming, video streaming, and more.",
-		"link": "https://store.steampowered.com/about/",
-		"winget": "Valve.Steam"
-	},
 	"WPFInstallstrawberry": {
 		"category": "Multimedia Tools",
 		"choco": "strawberrymusicplayer",
@@ -6526,14 +6211,6 @@ $sync.configs.applications = '{
 		"description": "Strawberry is an open-source music player that focuses on music collection management and audio quality. It supports various audio formats and features a clean user interface.",
 		"link": "https://www.strawberrymusicplayer.org/",
 		"winget": "StrawberryMusicPlayer.Strawberry"
-	},
-	"WPFInstallstremio": {
-		"winget": "Stremio.Stremio",
-		"choco": "stremio",
-		"category": "Multimedia Tools",
-		"content": "Stremio",
-		"link": "https://www.stremio.com/",
-		"description": "Stremio is a media center application that allows users to organize and stream their favorite movies, TV shows, and video content."
 	},
 	"WPFInstallsublimemerge": {
 		"category": "Development",
@@ -6559,14 +6236,6 @@ $sync.configs.applications = '{
 		"link": "https://www.sumatrapdfreader.org/free-pdf-reader.html",
 		"winget": "SumatraPDF.SumatraPDF"
 	},
-	"WPFInstallsunshine": {
-		"category": "Games",
-		"choco": "sunshine",
-		"content": "Sunshine/GameStream Server",
-		"description": "Sunshine is a GameStream server that allows you to remotely play PC games on Android devices, offering low-latency streaming.",
-		"link": "https://github.com/LizardByte/Sunshine",
-		"winget": "LizardByte.Sunshine"
-	},
 	"WPFInstallsuperf4": {
 		"category": "Utilities",
 		"choco": "superf4",
@@ -6590,14 +6259,6 @@ $sync.configs.applications = '{
 		"description": "Tailscale is a secure and easy-to-use VPN solution for connecting your devices and networks.",
 		"link": "https://tailscale.com/",
 		"winget": "tailscale.tailscale"
-	},
-	"WPFInstallTcNoAccSwitcher": {
-		"category": "Games",
-		"choco": "tcno-acc-switcher",
-		"content": "TCNO Account Switcher",
-		"description": "A Super-fast account switcher for Steam, Battle.net, Epic Games, Origin, Riot, Ubisoft and many others!",
-		"link": "https://github.com/TCNOco/TcNo-Acc-Switcher",
-		"winget": "TechNobo.TcNoAccountSwitcher"
 	},
 	"WPFInstalltcpview": {
 		"category": "Microsoft Tools",
@@ -6647,22 +6308,6 @@ $sync.configs.applications = '{
 		"link": "https://github.com/thonny/thonny",
 		"winget": "AivarAnnamaa.Thonny"
 	},
-	"WPFInstallthorium": {
-		"category": "Browsers",
-		"choco": "na",
-		"content": "Thorium Browser AVX2",
-		"description": "Browser built for speed over vanilla chromium. It is built with AVX2 optimizations and is the fastest browser on the market.",
-		"link": "http://thorium.rocks/",
-		"winget": "Alex313031.Thorium.AVX2"
-	},
-	"WPFInstallthunderbird": {
-		"category": "Communications",
-		"choco": "thunderbird",
-		"content": "Thunderbird",
-		"description": "Mozilla Thunderbird is a free and open-source email client, news client, and chat client with advanced features.",
-		"link": "https://www.thunderbird.net/",
-		"winget": "Mozilla.Thunderbird"
-	},
 	"WPFInstalltidal": {
 		"category": "Multimedia Tools",
 		"choco": "na",
@@ -6670,14 +6315,6 @@ $sync.configs.applications = '{
 		"description": "Tidal is a music streaming service known for its high-fidelity audio quality and exclusive content. It offers a vast library of songs and curated playlists.",
 		"link": "https://tidal.com/",
 		"winget": "9NNCB5BS59PH"
-	},
-	"WPFInstalltor": {
-		"category": "Browsers",
-		"choco": "tor-browser",
-		"content": "Tor Browser",
-		"description": "Tor Browser is designed for anonymous web browsing, utilizing the Tor network to protect user privacy and security.",
-		"link": "https://www.torproject.org/",
-		"winget": "TorProject.TorBrowser"
 	},
 	"WPFInstalltotalcommander": {
 		"category": "Utilities",
@@ -6711,22 +6348,6 @@ $sync.configs.applications = '{
 		"link": "https://twinkletray.com/",
 		"winget": "xanderfrangos.twinkletray"
 	},
-	"WPFInstallubisoft": {
-		"category": "Games",
-		"choco": "ubisoft-connect",
-		"content": "Ubisoft Connect",
-		"description": "Ubisoft Connect is Ubisoft''s digital distribution and online gaming service, providing access to Ubisoft''s games and services.",
-		"link": "https://ubisoftconnect.com/",
-		"winget": "Ubisoft.Connect"
-	},
-	"WPFInstallungoogled": {
-		"category": "Browsers",
-		"choco": "ungoogled-chromium",
-		"content": "Ungoogled",
-		"description": "Ungoogled Chromium is a version of Chromium without Google''s integration for enhanced privacy and control.",
-		"link": "https://github.com/Eloston/ungoogled-chromium",
-		"winget": "eloston.ungoogled-chromium"
-	},
 	"WPFInstallunity": {
 		"category": "Development",
 		"choco": "unityhub",
@@ -6759,14 +6380,6 @@ $sync.configs.applications = '{
 		"link": "https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads",
 		"winget": "Microsoft.VCRedist.2015+.x64"
 	},
-	"WPFInstallvencord": {
-		"category": "Communications",
-		"choco": "na",
-		"content": "Vencord",
-		"description": "Vencord is a modification for Discord that adds plugins, custom styles, and more!",
-		"link": "https://vencord.dev/",
-		"winget": "Vendicated.Vencord"
-	},
 	"WPFInstallventoy": {
 		"category": "Pro Tools",
 		"choco": "ventoy",
@@ -6774,22 +6387,6 @@ $sync.configs.applications = '{
 		"description": "Ventoy is an open-source tool for creating bootable USB drives. It supports multiple ISO files on a single USB drive, making it a versatile solution for installing operating systems.",
 		"link": "https://www.ventoy.net/",
 		"winget": "Ventoy.Ventoy"
-	},
-	"WPFInstallvesktop": {
-		"category": "Communications",
-		"choco": "na",
-		"content": "Vesktop",
-		"description": "A cross platform electron-based desktop app aiming to give you a snappier Discord experience with Vencord pre-installed.",
-		"link": "https://github.com/Vencord/Vesktop",
-		"winget": "Vencord.Vesktop"
-	},
-	"WPFInstallviber": {
-		"category": "Communications",
-		"choco": "viber",
-		"content": "Viber",
-		"description": "Viber is a free messaging and calling app with features like group chats, video calls, and more.",
-		"link": "https://www.viber.com/",
-		"winget": "Viber.Viber"
 	},
 	"WPFInstallvideomass": {
 		"category": "Multimedia Tools",
@@ -6807,14 +6404,6 @@ $sync.configs.applications = '{
 		"link": "https://visualstudio.microsoft.com/",
 		"winget": "Microsoft.VisualStudio.2022.Community"
 	},
-	"WPFInstallvivaldi": {
-		"category": "Browsers",
-		"choco": "vivaldi",
-		"content": "Vivaldi",
-		"description": "Vivaldi is a highly customizable web browser with a focus on user personalization and productivity features.",
-		"link": "https://vivaldi.com/",
-		"winget": "VivaldiTechnologies.Vivaldi"
-	},
 	"WPFInstallvlc": {
 		"category": "Multimedia Tools",
 		"choco": "vlc",
@@ -6830,14 +6419,6 @@ $sync.configs.applications = '{
 		"description": "Voicemeeter is a virtual audio mixer that allows you to manage and enhance audio streams on your computer. It is commonly used for audio recording and streaming purposes.",
 		"link": "https://www.vb-audio.com/Voicemeeter/",
 		"winget": "VB-Audio.Voicemeeter"
-	},
-	"WPFInstallvrdesktopstreamer": {
-		"category": "Games",
-		"choco": "na",
-		"content": "Virtual Desktop Streamer",
-		"description": "Virtual Desktop Streamer is a tool that allows you to stream your desktop screen to VR devices.",
-		"link": "https://www.vrdesktop.net/",
-		"winget": "VirtualDesktop.Streamer"
 	},
 	"WPFInstallvscode": {
 		"category": "Development",
@@ -6855,14 +6436,6 @@ $sync.configs.applications = '{
 		"link": "https://vscodium.com/",
 		"winget": "Git.Git;VSCodium.VSCodium"
 	},
-	"WPFInstallwaterfox": {
-		"category": "Browsers",
-		"choco": "waterfox",
-		"content": "Waterfox",
-		"description": "Waterfox is a fast, privacy-focused web browser based on Firefox, designed to preserve user choice and privacy.",
-		"link": "https://www.waterfox.net/",
-		"winget": "Waterfox.Waterfox"
-	},
 	"WPFInstallwezterm": {
 		"category": "Development",
 		"choco": "wezterm",
@@ -6870,14 +6443,6 @@ $sync.configs.applications = '{
 		"description": "WezTerm is a powerful cross-platform terminal emulator and multiplexer",
 		"link": "https://wezfurlong.org/wezterm/index.html",
 		"winget": "wez.wezterm"
-	},
-	"WPFInstallwhatsapp": {
-		"category": "Communications",
-		"choco": "whatsapp",
-		"content": "Whatsapp",
-		"description": "WhatsApp Desktop is a desktop version of the popular messaging app, allowing users to send and receive messages, share files, and connect with contacts from their computer.",
-		"link": "https://www.whatsapp.com/",
-		"winget": "WhatsApp.WhatsApp"
 	},
 	"WPFInstallwindirstat": {
 		"category": "Utilities",
@@ -6983,14 +6548,6 @@ $sync.configs.applications = '{
 		"link": "https://mh-nexus.de/en/hxd/",
 		"winget": "MHNexus.HxD"
 	},
-	"WPFInstallxemu": {
-		"category": "Games",
-		"choco": "na",
-		"content": "XEMU",
-		"description": "XEMU is an open-source Xbox emulator that allows you to play Xbox games on your PC, aiming for accuracy and compatibility.",
-		"link": "https://xemu.app/",
-		"winget": "xemu-project.xemu"
-	},
 	"WPFInstallxournal": {
 		"category": "Document",
 		"choco": "xournalplusplus",
@@ -7070,14 +6627,6 @@ $sync.configs.applications = '{
 		"description": "Zoxide is a fast and efficient directory changer (cd) that helps you navigate your file system with ease.",
 		"link": "https://github.com/ajeetdsouza/zoxide",
 		"winget": "ajeetdsouza.zoxide"
-	},
-	"WPFInstallzulip": {
-		"category": "Communications",
-		"choco": "zulip",
-		"content": "Zulip",
-		"description": "Zulip is an open-source team collaboration tool with chat streams for productive and organized communication.",
-		"link": "https://zulipchat.com/",
-		"winget": "Zulip.Zulip"
 	},
 	"WPFInstallsyncthingtray": {
 		"category": "Utilities",
@@ -7585,6 +7134,22 @@ $sync.configs.tweaks = '{
         "Type": "DWord",
         "Value": "0",
         "OriginalValue": "1"
+      }
+    ]
+  },
+  "WPFTweaksGCPW": {
+    "Content": "Configure registry for GCPW",
+    "Description": "This creates a registry entry for GCPW",
+    "category": "Essential Tweaks",
+    "panel":"1",
+    "Order":"a015_",
+    "registry": [
+      {
+        "Path": "HKLM:\\SOFTWARE\\GOOGLE\\GCPW",
+        "Name": "domains_allowed_to_login",
+        "Type": "String",
+        "Value": "$env:computername, alpha.local, alphamediausa.com",
+        "OriginalValue": ""
       }
     ]
   },
@@ -10929,19 +10494,10 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <Label Content="Browsers" FontSize="16"/>
 <StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallbrave" Content="Brave" ToolTip="Brave is a privacy-focused web browser that blocks ads and trackers, offering a faster and safer browsing experience." Margin="0,0,2,0"/><TextBlock Name="WPFInstallbraveLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.brave.com" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallchrome" Content="Chrome" ToolTip="Google Chrome is a widely used web browser known for its speed, simplicity, and seamless integration with Google services." Margin="0,0,2,0"/><TextBlock Name="WPFInstallchromeLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.google.com/chrome/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallchromium" Content="Chromium" ToolTip="Chromium is the open-source project that serves as the foundation for various web browsers, including Chrome." Margin="0,0,2,0"/><TextBlock Name="WPFInstallchromiumLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/Hibbiki/chromium-win64" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalledge" Content="Edge" ToolTip="Microsoft Edge is a modern web browser built on Chromium, offering performance, security, and integration with Microsoft services." Margin="0,0,2,0"/><TextBlock Name="WPFInstalledgeLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.microsoft.com/edge" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallfalkon" Content="Falkon" ToolTip="Falkon is a lightweight and fast web browser with a focus on user privacy and efficiency." Margin="0,0,2,0"/><TextBlock Name="WPFInstallfalkonLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.falkon.org/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallfirefox" Content="Firefox" ToolTip="Mozilla Firefox is an open-source web browser known for its customization options, privacy features, and extensions." Margin="0,0,2,0"/><TextBlock Name="WPFInstallfirefoxLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.mozilla.org/en-US/firefox/new/" />
@@ -10949,70 +10505,7 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallfirefoxesr" Content="Firefox ESR" ToolTip="Mozilla Firefox is an open-source web browser known for its customization options, privacy features, and extensions. Firefox ESR (Extended Support Release) receives major updates every 42 weeks with minor updates such as crash fixes, security fixes and policy updates as needed, but at least every four weeks." Margin="0,0,2,0"/><TextBlock Name="WPFInstallfirefoxesrLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.mozilla.org/en-US/firefox/enterprise/" />
 </StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallfloorp" Content="Floorp" ToolTip="Floorp is an open-source web browser project that aims to provide a simple and fast browsing experience." Margin="0,0,2,0"/><TextBlock Name="WPFInstallfloorpLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://floorp.app/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstalllibrewolf" Content="LibreWolf" ToolTip="LibreWolf is a privacy-focused web browser based on Firefox, with additional privacy and security enhancements." Margin="0,0,2,0"/><TextBlock Name="WPFInstalllibrewolfLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://librewolf-community.gitlab.io/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallmullvadbrowser" Content="Mullvad Browser" ToolTip="Mullvad Browser is a privacy-focused web browser, developed in partnership with the Tor Project." Margin="0,0,2,0"/><TextBlock Name="WPFInstallmullvadbrowserLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://mullvad.net/browser" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallthorium" Content="Thorium Browser AVX2" ToolTip="Browser built for speed over vanilla chromium. It is built with AVX2 optimizations and is the fastest browser on the market." Margin="0,0,2,0"/><TextBlock Name="WPFInstallthoriumLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="http://thorium.rocks/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstalltor" Content="Tor Browser" ToolTip="Tor Browser is designed for anonymous web browsing, utilizing the Tor network to protect user privacy and security." Margin="0,0,2,0"/><TextBlock Name="WPFInstalltorLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.torproject.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallungoogled" Content="Ungoogled" ToolTip="Ungoogled Chromium is a version of Chromium without Google''s integration for enhanced privacy and control." Margin="0,0,2,0"/><TextBlock Name="WPFInstallungoogledLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/Eloston/ungoogled-chromium" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallvivaldi" Content="Vivaldi" ToolTip="Vivaldi is a highly customizable web browser with a focus on user personalization and productivity features." Margin="0,0,2,0"/><TextBlock Name="WPFInstallvivaldiLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://vivaldi.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallwaterfox" Content="Waterfox" ToolTip="Waterfox is a fast, privacy-focused web browser based on Firefox, designed to preserve user choice and privacy." Margin="0,0,2,0"/><TextBlock Name="WPFInstallwaterfoxLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.waterfox.net/" />
-</StackPanel>
 <Label Content="Communications" FontSize="16"/>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallchatterino" Content="Chatterino" ToolTip="Chatterino is a chat client for Twitch chat that offers a clean and customizable interface for a better streaming experience." Margin="0,0,2,0"/><TextBlock Name="WPFInstallchatterinoLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.chatterino.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstalldiscord" Content="Discord" ToolTip="Discord is a popular communication platform with voice, video, and text chat, designed for gamers but used by a wide range of communities." Margin="0,0,2,0"/><TextBlock Name="WPFInstalldiscordLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://discord.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallferdium" Content="Ferdium" ToolTip="Ferdium is a messaging application that combines multiple messaging services into a single app for easy management." Margin="0,0,2,0"/><TextBlock Name="WPFInstallferdiumLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://ferdium.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallguilded" Content="Guilded" ToolTip="Guilded is a communication and productivity platform that includes chat, scheduling, and collaborative tools for gaming and communities." Margin="0,0,2,0"/><TextBlock Name="WPFInstallguildedLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.guilded.gg/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallhexchat" Content="Hexchat" ToolTip="HexChat is a free, open-source IRC (Internet Relay Chat) client with a graphical interface for easy communication." Margin="0,0,2,0"/><TextBlock Name="WPFInstallhexchatLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://hexchat.github.io/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstalljami" Content="Jami" ToolTip="Jami is a secure and privacy-focused communication platform that offers audio and video calls, messaging, and file sharing." Margin="0,0,2,0"/><TextBlock Name="WPFInstalljamiLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://jami.net/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstalllinphone" Content="Linphone" ToolTip="Linphone is an open-source voice over IP (VoIPservice that allows for audio and video calls, messaging, and more." Margin="0,0,2,0"/><TextBlock Name="WPFInstalllinphoneLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.linphone.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallmatrix" Content="Matrix" ToolTip="Matrix is an open network for secure, decentralized communication with features like chat, VoIP, and collaboration tools." Margin="0,0,2,0"/><TextBlock Name="WPFInstallmatrixLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://element.io/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallqtox" Content="QTox" ToolTip="QTox is a free and open-source messaging app that prioritizes user privacy and security in its design." Margin="0,0,2,0"/><TextBlock Name="WPFInstallqtoxLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://qtox.github.io/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallsession" Content="Session" ToolTip="Session is a private and secure messaging app built on a decentralized network for user privacy and data protection." Margin="0,0,2,0"/><TextBlock Name="WPFInstallsessionLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://getsession.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallsignal" Content="Signal" ToolTip="Signal is a privacy-focused messaging app that offers end-to-end encryption for secure and private communication." Margin="0,0,2,0"/><TextBlock Name="WPFInstallsignalLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://signal.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallskype" Content="Skype" ToolTip="Skype is a widely used communication platform offering video calls, voice calls, and instant messaging services." Margin="0,0,2,0"/><TextBlock Name="WPFInstallskypeLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.skype.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallslack" Content="Slack" ToolTip="Slack is a collaboration hub that connects teams and facilitates communication through channels, messaging, and file sharing." Margin="0,0,2,0"/><TextBlock Name="WPFInstallslackLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://slack.com/" />
-</StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallteams" Content="Teams" ToolTip="Microsoft Teams is a collaboration platform that integrates with Office 365 and offers chat, video conferencing, file sharing, and more." Margin="0,0,2,0"/><TextBlock Name="WPFInstallteamsLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" />
 </StackPanel>
@@ -11020,25 +10513,7 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <CheckBox Name="WPFInstalltelegram" Content="Telegram" ToolTip="Telegram is a cloud-based instant messaging app known for its security features, speed, and simplicity." Margin="0,0,2,0"/><TextBlock Name="WPFInstalltelegramLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://telegram.org/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallthunderbird" Content="Thunderbird" ToolTip="Mozilla Thunderbird is a free and open-source email client, news client, and chat client with advanced features." Margin="0,0,2,0"/><TextBlock Name="WPFInstallthunderbirdLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.thunderbird.net/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallvencord" Content="Vencord" ToolTip="Vencord is a modification for Discord that adds plugins, custom styles, and more!" Margin="0,0,2,0"/><TextBlock Name="WPFInstallvencordLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://vencord.dev/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallvesktop" Content="Vesktop" ToolTip="A cross platform electron-based desktop app aiming to give you a snappier Discord experience with Vencord pre-installed." Margin="0,0,2,0"/><TextBlock Name="WPFInstallvesktopLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/Vencord/Vesktop" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallviber" Content="Viber" ToolTip="Viber is a free messaging and calling app with features like group chats, video calls, and more." Margin="0,0,2,0"/><TextBlock Name="WPFInstallviberLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.viber.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallwhatsapp" Content="Whatsapp" ToolTip="WhatsApp Desktop is a desktop version of the popular messaging app, allowing users to send and receive messages, share files, and connect with contacts from their computer." Margin="0,0,2,0"/><TextBlock Name="WPFInstallwhatsappLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.whatsapp.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallzoom" Content="Zoom" ToolTip="Zoom is a popular video conferencing and web conferencing service for online meetings, webinars, and collaborative projects." Margin="0,0,2,0"/><TextBlock Name="WPFInstallzoomLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://zoom.us/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallzulip" Content="Zulip" ToolTip="Zulip is an open-source team collaboration tool with chat streams for productive and organized communication." Margin="0,0,2,0"/><TextBlock Name="WPFInstallzulipLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://zulipchat.com/" />
 </StackPanel>
 <Label Content="Development" FontSize="16"/>
 <StackPanel Orientation="Horizontal">
@@ -11101,11 +10576,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallnodejs" Content="NodeJS" ToolTip="NodeJS is a JavaScript runtime built on Chrome''s V8 JavaScript engine for building server-side and networking applications." Margin="0,0,2,0"/><TextBlock Name="WPFInstallnodejsLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://nodejs.org/" />
 </StackPanel>
-
-</StackPanel>
-</Border>
-<Border Grid.Row="1" Grid.Column="1">
-<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallnodejslts" Content="NodeJS LTS" ToolTip="NodeJS LTS provides Long-Term Support releases for stable and reliable server-side JavaScript development." Margin="0,0,2,0"/><TextBlock Name="WPFInstallnodejsltsLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://nodejs.org/" />
 </StackPanel>
@@ -11160,15 +10630,17 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallwezterm" Content="Wezterm" ToolTip="WezTerm is a powerful cross-platform terminal emulator and multiplexer" Margin="0,0,2,0"/><TextBlock Name="WPFInstallweztermLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://wezfurlong.org/wezterm/index.html" />
 </StackPanel>
+
+</StackPanel>
+</Border>
+<Border Grid.Row="1" Grid.Column="1">
+<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallyarn" Content="Yarn" ToolTip="Yarn is a fast, reliable, and secure dependency management tool for JavaScript projects." Margin="0,0,2,0"/><TextBlock Name="WPFInstallyarnLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://yarnpkg.com/" />
 </StackPanel>
 <Label Content="Document" FontSize="16"/>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalladobe" Content="Adobe Acrobat Reader" ToolTip="Adobe Acrobat Reader is a free PDF viewer with essential features for viewing, printing, and annotating PDF documents." Margin="0,0,2,0"/><TextBlock Name="WPFInstalladobeLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.adobe.com/acrobat/pdf-reader.html" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallanki" Content="Anki" ToolTip="Anki is a flashcard application that helps you memorize information with intelligent spaced repetition." Margin="0,0,2,0"/><TextBlock Name="WPFInstallankiLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://apps.ankiweb.net/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallcalibre" Content="Calibre" ToolTip="Calibre is a powerful and easy-to-use e-book manager, viewer, and converter." Margin="0,0,2,0"/><TextBlock Name="WPFInstallcalibreLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://calibre-ebook.com/" />
@@ -11232,78 +10704,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallzotero" Content="Zotero" ToolTip="Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share your research materials." Margin="0,0,2,0"/><TextBlock Name="WPFInstallzoteroLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.zotero.org/" />
-</StackPanel>
-<Label Content="Games" FontSize="16"/>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallATLauncher" Content="ATLauncher" ToolTip="ATLauncher is a Launcher for Minecraft which integrates multiple different ModPacks to allow you to download and install ModPacks easily and quickly." Margin="0,0,2,0"/><TextBlock Name="WPFInstallATLauncherLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/ATLauncher/ATLauncher" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallbluestacks" Content="Bluestacks" ToolTip="Bluestacks is an Android emulator for running mobile apps and games on a PC." Margin="0,0,2,0"/><TextBlock Name="WPFInstallbluestacksLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.bluestacks.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallcemu" Content="Cemu" ToolTip="Cemu is a highly experimental software to emulate Wii U applications on PC." Margin="0,0,2,0"/><TextBlock Name="WPFInstallcemuLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://cemu.info/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallclonehero" Content="Clone Hero" ToolTip="Clone Hero is a free rhythm game, which can be played with any 5 or 6 button guitar controller." Margin="0,0,2,0"/><TextBlock Name="WPFInstallcloneheroLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://clonehero.net/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstalleaapp" Content="EA App" ToolTip="EA App is a platform for accessing and playing Electronic Arts games." Margin="0,0,2,0"/><TextBlock Name="WPFInstalleaappLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.ea.com/ea-app" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallemulationstation" Content="Emulation Station" ToolTip="Emulation Station is a graphical and themeable emulator front-end that allows you to access all your favorite games in one place." Margin="0,0,2,0"/><TextBlock Name="WPFInstallemulationstationLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://emulationstation.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallepicgames" Content="Epic Games Launcher" ToolTip="Epic Games Launcher is the client for accessing and playing games from the Epic Games Store." Margin="0,0,2,0"/><TextBlock Name="WPFInstallepicgamesLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.epicgames.com/store/en-US/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallgeforcenow" Content="GeForce NOW" ToolTip="GeForce NOW is a cloud gaming service that allows you to play high-quality PC games on your device." Margin="0,0,2,0"/><TextBlock Name="WPFInstallgeforcenowLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.nvidia.com/en-us/geforce-now/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallgog" Content="GOG Galaxy" ToolTip="GOG Galaxy is a gaming client that offers DRM-free games, additional content, and more." Margin="0,0,2,0"/><TextBlock Name="WPFInstallgogLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.gog.com/galaxy" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallheroiclauncher" Content="Heroic Games Launcher" ToolTip="Heroic Games Launcher is an open-source alternative game launcher for Epic Games Store." Margin="0,0,2,0"/><TextBlock Name="WPFInstallheroiclauncherLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://heroicgameslauncher.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallitch" Content="Itch.io" ToolTip="Itch.io is a digital distribution platform for indie games and creative projects." Margin="0,0,2,0"/><TextBlock Name="WPFInstallitchLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://itch.io/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallmoonlight" Content="Moonlight/GameStream Client" ToolTip="Moonlight/GameStream Client allows you to stream PC games to other devices over your local network." Margin="0,0,2,0"/><TextBlock Name="WPFInstallmoonlightLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://moonlight-stream.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallplaynite" Content="Playnite" ToolTip="Playnite is an open-source video game library manager with one simple goal: To provide a unified interface for all of your games." Margin="0,0,2,0"/><TextBlock Name="WPFInstallplayniteLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://playnite.link/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallprismlauncher" Content="Prism Launcher" ToolTip="Prism Launcher is a game launcher and manager designed to provide a clean and intuitive interface for organizing and launching your games." Margin="0,0,2,0"/><TextBlock Name="WPFInstallprismlauncherLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://prismlauncher.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallpsremoteplay" Content="PS Remote Play" ToolTip="PS Remote Play is a free application that allows you to stream games from your PlayStation console to a PC or mobile device." Margin="0,0,2,0"/><TextBlock Name="WPFInstallpsremoteplayLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://remoteplay.dl.playstation.net/remoteplay/lang/gb/" />
-</StackPanel>
-
-</StackPanel>
-</Border>
-<Border Grid.Row="1" Grid.Column="2">
-<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallsidequest" Content="SideQuestVR" ToolTip="SideQuestVR is a community-driven platform that enables users to discover, install, and manage virtual reality content on Oculus Quest devices." Margin="0,0,2,0"/><TextBlock Name="WPFInstallsidequestLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://sidequestvr.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallsteam" Content="Steam" ToolTip="Steam is a digital distribution platform for purchasing and playing video games, offering multiplayer gaming, video streaming, and more." Margin="0,0,2,0"/><TextBlock Name="WPFInstallsteamLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://store.steampowered.com/about/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallsunshine" Content="Sunshine/GameStream Server" ToolTip="Sunshine is a GameStream server that allows you to remotely play PC games on Android devices, offering low-latency streaming." Margin="0,0,2,0"/><TextBlock Name="WPFInstallsunshineLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/LizardByte/Sunshine" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallTcNoAccSwitcher" Content="TCNO Account Switcher" ToolTip="A Super-fast account switcher for Steam, Battle.net, Epic Games, Origin, Riot, Ubisoft and many others!" Margin="0,0,2,0"/><TextBlock Name="WPFInstallTcNoAccSwitcherLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/TCNOco/TcNo-Acc-Switcher" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallubisoft" Content="Ubisoft Connect" ToolTip="Ubisoft Connect is Ubisoft''s digital distribution and online gaming service, providing access to Ubisoft''s games and services." Margin="0,0,2,0"/><TextBlock Name="WPFInstallubisoftLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://ubisoftconnect.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallvrdesktopstreamer" Content="Virtual Desktop Streamer" ToolTip="Virtual Desktop Streamer is a tool that allows you to stream your desktop screen to VR devices." Margin="0,0,2,0"/><TextBlock Name="WPFInstallvrdesktopstreamerLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.vrdesktop.net/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallxemu" Content="XEMU" ToolTip="XEMU is an open-source Xbox emulator that allows you to play Xbox games on your PC, aiming for accuracy and compatibility." Margin="0,0,2,0"/><TextBlock Name="WPFInstallxemuLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://xemu.app/" />
 </StackPanel>
 <Label Content="Microsoft Tools" FontSize="16"/>
 <StackPanel Orientation="Horizontal">
@@ -11370,6 +10770,11 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalldigikam" Content="digiKam" ToolTip="digiKam is an advanced open-source photo management software with features for organizing, editing, and sharing photos." Margin="0,0,2,0"/><TextBlock Name="WPFInstalldigikamLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.digikam.org/" />
 </StackPanel>
+
+</StackPanel>
+</Border>
+<Border Grid.Row="1" Grid.Column="2">
+<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalleartrumpet" Content="EarTrumpet (Audio)" ToolTip="EarTrumpet is an audio control app for Windows, providing a simple and intuitive interface for managing sound settings." Margin="0,0,2,0"/><TextBlock Name="WPFInstalleartrumpetLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://eartrumpet.app/" />
 </StackPanel>
@@ -11437,9 +10842,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <CheckBox Name="WPFInstallmusicbee" Content="MusicBee (Music Player)" ToolTip="MusicBee is a customizable music player with support for various audio formats. It includes features like an integrated search function, tag editing, and more." Margin="0,0,2,0"/><TextBlock Name="WPFInstallmusicbeeLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://getmusicbee.com/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallnglide" Content="nGlide (3dfx compatibility)" ToolTip="nGlide is a 3Dfx Voodoo Glide wrapper. It allows you to play games that use Glide API on modern graphics cards without the need for a 3Dfx Voodoo graphics card." Margin="0,0,2,0"/><TextBlock Name="WPFInstallnglideLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="http://www.zeus-software.com/downloads/nglide" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallnomacs" Content="Nomacs (Image viewer)" ToolTip="Nomacs is a free, open-source image viewer that supports multiple platforms. It features basic image editing capabilities and supports a variety of image formats." Margin="0,0,2,0"/><TextBlock Name="WPFInstallnomacsLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://nomacs.org/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
@@ -11460,14 +10862,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallstrawberry" Content="Strawberry (Music Player)" ToolTip="Strawberry is an open-source music player that focuses on music collection management and audio quality. It supports various audio formats and features a clean user interface." Margin="0,0,2,0"/><TextBlock Name="WPFInstallstrawberryLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.strawberrymusicplayer.org/" />
 </StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallstremio" Content="Stremio" ToolTip="Stremio is a media center application that allows users to organize and stream their favorite movies, TV shows, and video content." Margin="0,0,2,0"/><TextBlock Name="WPFInstallstremioLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.stremio.com/" />
-</StackPanel>
-
-</StackPanel>
-</Border>
-<Border Grid.Row="1" Grid.Column="3">
-<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalltidal" Content="Tidal" ToolTip="Tidal is a music streaming service known for its high-fidelity audio quality and exclusive content. It offers a vast library of songs and curated playlists." Margin="0,0,2,0"/><TextBlock Name="WPFInstalltidalLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://tidal.com/" />
 </StackPanel>
@@ -11526,6 +10920,11 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallwireguard" Content="WireGuard" ToolTip="WireGuard is a fast and modern VPN (Virtual Private Network) protocol. It aims to be simpler and more efficient than other VPN protocols, providing secure and reliable connections." Margin="0,0,2,0"/><TextBlock Name="WPFInstallwireguardLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.wireguard.com/" />
 </StackPanel>
+
+</StackPanel>
+</Border>
+<Border Grid.Row="1" Grid.Column="3">
+<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallwireshark" Content="Wireshark" ToolTip="Wireshark is a widely-used open-source network protocol analyzer. It allows users to capture and analyze network traffic in real-time, providing detailed insights into network activities." Margin="0,0,2,0"/><TextBlock Name="WPFInstallwiresharkLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.wireshark.org/" />
 </StackPanel>
@@ -11533,9 +10932,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <CheckBox Name="WPFInstallxpipe" Content="XPipe" ToolTip="XPipe is an open-source tool for orchestrating containerized applications. It simplifies the deployment and management of containerized services in a distributed environment." Margin="0,0,2,0"/><TextBlock Name="WPFInstallxpipeLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://xpipe.io/" />
 </StackPanel>
 <Label Content="Utilities" FontSize="16"/>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstall1password" Content="1Password" ToolTip="1Password is a password manager that allows you to store and manage your passwords securely." Margin="0,0,2,0"/><TextBlock Name="WPFInstall1passwordLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://1password.com/" />
-</StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstall7zip" Content="7-Zip" ToolTip="7-Zip is a free and open-source file archiver utility. It supports several compression formats and provides a high compression ratio, making it a popular choice for file compression." Margin="0,0,2,0"/><TextBlock Name="WPFInstall7zipLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.7-zip.org/" />
 </StackPanel>
@@ -11546,9 +10942,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <CheckBox Name="WPFInstallanydesk" Content="AnyDesk" ToolTip="AnyDesk is a remote desktop software that enables users to access and control computers remotely. It is known for its fast connection and low latency." Margin="0,0,2,0"/><TextBlock Name="WPFInstallanydeskLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://anydesk.com/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallauthy" Content="Authy" ToolTip="Simple and cross-platform 2FA app" Margin="0,0,2,0"/><TextBlock Name="WPFInstallauthyLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://authy.com/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallautohotkey" Content="AutoHotkey" ToolTip="AutoHotkey is a scripting language for Windows that allows users to create custom automation scripts and macros. It is often used for automating repetitive tasks and customizing keyboard shortcuts." Margin="0,0,2,0"/><TextBlock Name="WPFInstallautohotkeyLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.autohotkey.com/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
@@ -11556,9 +10949,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallbat" Content="Bat (Cat)" ToolTip="Bat is a cat command clone with syntax highlighting. It provides a user-friendly and feature-rich alternative to the traditional cat command for viewing and concatenating files." Margin="0,0,2,0"/><TextBlock Name="WPFInstallbatLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/sharkdp/bat" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallbitcomet" Content="BitComet" ToolTip="BitComet is a free and open-source BitTorrent client that supports HTTP/FTP downloads and provides download management features." Margin="0,0,2,0"/><TextBlock Name="WPFInstallbitcometLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.bitcomet.com/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallbitwarden" Content="Bitwarden" ToolTip="Bitwarden is an open-source password management solution. It allows users to store and manage their passwords in a secure and encrypted vault, accessible across multiple devices." Margin="0,0,2,0"/><TextBlock Name="WPFInstallbitwardenLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://bitwarden.com/" />
@@ -11586,9 +10976,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallddu" Content="Display Driver Uninstaller" ToolTip="Display Driver Uninstaller (DDU) is a tool for completely uninstalling graphics drivers from NVIDIA, AMD, and Intel. It is useful for troubleshooting graphics driver-related issues." Margin="0,0,2,0"/><TextBlock Name="WPFInstalldduLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.wagnardsoft.com/display-driver-uninstaller-DDU-" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstalldeluge" Content="Deluge" ToolTip="Deluge is a free and open-source BitTorrent client. It features a user-friendly interface, support for plugins, and the ability to manage torrents remotely." Margin="0,0,2,0"/><TextBlock Name="WPFInstalldelugeLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://deluge-torrent.org/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalldevtoys" Content="DevToys" ToolTip="DevToys is a collection of development-related utilities and tools for Windows. It includes tools for file management, code formatting, and productivity enhancements for developers." Margin="0,0,2,0"/><TextBlock Name="WPFInstalldevtoysLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://devtoys.app/" />
@@ -11641,16 +11028,14 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalljdownloader" Content="JDownloader" ToolTip="JDownloader is a feature-rich download manager with support for various file hosting services." Margin="0,0,2,0"/><TextBlock Name="WPFInstalljdownloaderLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="http://jdownloader.org/" />
 </StackPanel>
-
-</StackPanel>
-</Border>
-<Border Grid.Row="1" Grid.Column="4">
-<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallkdeconnect" Content="KDE Connect" ToolTip="KDE Connect allows seamless integration between your KDE desktop and mobile devices." Margin="0,0,2,0"/><TextBlock Name="WPFInstallkdeconnectLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://community.kde.org/KDEConnect" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallkeepass" Content="KeePassXC" ToolTip="KeePassXC is a cross-platform, open-source password manager with strong encryption features." Margin="0,0,2,0"/><TextBlock Name="WPFInstallkeepassLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://keepassxc.org/" />
+<CheckBox Name="WPFInstallkeepass" Content="KeePass" ToolTip="KeePass is a light-weight, easy to use, open-source password manager with strong encryption features." Margin="0,0,2,0"/><TextBlock Name="WPFInstallkeepassLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://keepass.info/" />
+</StackPanel>
+<StackPanel Orientation="Horizontal">
+<CheckBox Name="WPFInstallkeepassXC" Content="KeePassXC" ToolTip="KeePassXC is a cross-platform, open-source password manager with strong encryption features." Margin="0,0,2,0"/><TextBlock Name="WPFInstallkeepassXCLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://keepassxc.org/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstalllivelywallpaper" Content="Lively Wallpaper" ToolTip="Free and open-source software that allows users to set animated desktop wallpapers and screensavers." Margin="0,0,2,0"/><TextBlock Name="WPFInstalllivelywallpaperLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.rocksdanister.com/lively/" />
@@ -11679,6 +11064,11 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallneofetchwin" Content="Neofetch" ToolTip="Neofetch is a command-line utility for displaying system information in a visually appealing way." Margin="0,0,2,0"/><TextBlock Name="WPFInstallneofetchwinLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://github.com/nepnep39/neofetch-win" />
 </StackPanel>
+
+</StackPanel>
+</Border>
+<Border Grid.Row="1" Grid.Column="4">
+<StackPanel Background="{MainBackgroundColor}" SnapsToDevicePixels="True">
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallnextclouddesktop" Content="Nextcloud Desktop" ToolTip="Nextcloud Desktop is the official desktop client for the Nextcloud file synchronization and sharing platform." Margin="0,0,2,0"/><TextBlock Name="WPFInstallnextclouddesktopLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://nextcloud.com/install/#install-clients" />
 </StackPanel>
@@ -11723,12 +11113,6 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallprucaslicer" Content="PrusaSlicer" ToolTip="PrusaSlicer is a powerful and easy-to-use slicing software for 3D printing with Prusa 3D printers." Margin="0,0,2,0"/><TextBlock Name="WPFInstallprucaslicerLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.prusa3d.com/prusaslicer/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallqbittorrent" Content="qBittorrent" ToolTip="qBittorrent is a free and open-source BitTorrent client that aims to provide a feature-rich and lightweight alternative to other torrent clients." Margin="0,0,2,0"/><TextBlock Name="WPFInstallqbittorrentLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.qbittorrent.org/" />
-</StackPanel>
-<StackPanel Orientation="Horizontal">
-<CheckBox Name="WPFInstallrainmeter" Content="Rainmeter" ToolTip="Rainmeter is a desktop customization tool that allows you to create and share customizable skins for your desktop." Margin="0,0,2,0"/><TextBlock Name="WPFInstallrainmeterLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.rainmeter.net/" />
 </StackPanel>
 <StackPanel Orientation="Horizontal">
 <CheckBox Name="WPFInstallrevo" Content="Revo Uninstaller" ToolTip="Revo Uninstaller is an advanced uninstaller tool that helps you remove unwanted software and clean up your system." Margin="0,0,2,0"/><TextBlock Name="WPFInstallrevoLink" Style="{StaticResource HoverTextBlockStyle}" Text="(?)" ToolTip="https://www.revouninstaller.com/" />
@@ -11856,6 +11240,7 @@ $inputXML =  '<Window x:Class="WinUtility.MainWindow"
 <CheckBox Name="WPFTweaksDVR" Content="Disable GameDVR" Margin="5,0"  ToolTip="GameDVR is a Windows App that is a dependency for some Store Games. I''ve never met someone that likes it, but it''s there for the XBOX crowd."/>
 <CheckBox Name="WPFTweaksTeredo" Content="Disable Teredo" Margin="5,0"  ToolTip="Teredo network tunneling is a ipv6 feature that can cause additional latency."/>
 <CheckBox Name="WPFTweaksServices" Content="Set Services to Manual" Margin="5,0"  ToolTip="Turns a bunch of system services to manual that don''t need to be running all the time. This is pretty harmless as if the service is needed, it will simply start on demand."/>
+<CheckBox Name="WPFTweaksGCPW" Content="Configure registry for GCPW" Margin="5,0"  ToolTip="This creates a registry entry for GCPW"/>
 <Label Content="Advanced Tweaks - CAUTION" FontSize="16"/>
 <CheckBox Name="WPFTweaksDisplay" Content="Set Display for Performance" Margin="5,0"  ToolTip="Sets the system preferences to performance. You can do this manually with sysdm.cpl as well."/>
 <CheckBox Name="WPFTweaksUTC" Content="Set Time to UTC (Dual Boot)" Margin="5,0"  ToolTip="Essential for computers that are dual booting. Fixes the time sync with Linux Systems."/>

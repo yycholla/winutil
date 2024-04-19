@@ -29,6 +29,22 @@
       }
     ]
   },
+  "WPFTweaksGCPW": {
+    "Content": "Configure registry for GCPW",
+    "Description": "This creates a registry entry for GCPW",
+    "category": "Essential Tweaks",
+    "panel":"1",
+    "Order":"a015_",
+    "registry": [
+      {
+        "Path": "HKLM:\\SOFTWARE\\GOOGLE\\GCPW",
+        "Name": "domains_allowed_to_login",
+        "Type": "String",
+        "Value": "$env:computername, alpha.local, alphamediausa.com",
+        "OriginalValue": ""
+      }
+    ]
+  },
   "WPFTweaksHiber": {
     "Content": "Disable Hibernation",
     "Description": "Hibernation is really meant for laptops as it saves what's in memory before turning the pc off. It really should never be used, but some people are lazy and rely on it. Don't be like Bob. Bob likes hibernation.",
